@@ -1,0 +1,90 @@
+//App.js
+import logo from './logo.svg';
+import './App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <div className="App">
+      <Header/>
+      <Banner/>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;
+
+// Header.js
+import React from 'react'
+
+const Header = () => {
+  const style={
+    top:"20px",
+    position:"relative",
+    display:"flex",
+    justifyContent:"space-around",
+  };
+  return (
+   // <div style={{textAlign:"left" }}>
+   <div style={style}>
+    <header>
+  
+  
+      <h3>
+        <select>
+         <option value="Home">Home</option>
+         </select>
+         <select>
+         <option value="About">About us</option>
+           </select>
+           <select>
+           <option value="Contact">Contact us</option>
+           </select> </h3>
+         
+ </header>  
+     </div>
+  )
+}
+
+export default Header
+
+//Banner.js
+import React from 'react'
+
+const Banner = () => {
+  return (
+    <div>
+    <section>
+    <img width="1200" height="400" src="https://th.bing.com/th/id/R.77e67367b2700684eaca35863001bd98?rik=HB1j6Rp35hky7A&riu=http%3a%2f%2fwww.wallpapergeeks.com%2fwp-content%2fuploads%2f2015%2f04%2frocky-beach-wallpaper.jpg&ehk=e95Jhra3%2fmB8oNeu4PpNN%2bAzMdEwsjEmGtca4jKvu7k%3d&risl=&pid=ImgRaw&r=0"/>
+    </section>
+    </div>
+  )
+}
+
+export default Banner
+
+//Footer.js
+import React from 'react'
+
+const Footer = () => {
+  const css="text-align: center"
+  return (
+   <div>
+    <footer>
+      <div style={{css}}>
+        <h2>Copyrigths reserved</h2>
+      </div>
+    </footer>
+    </div>
+     )
+}
+
+export default Footer
+
+//Global.css
+body{
+    background-color: darkgoldenrod;
+}
